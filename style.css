@@ -45,11 +45,7 @@ button:hover {
 
 #keys {
     display: grid;
-    /* grid-template-columns: repeat(4, 1fr); */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
     gap: 5px;
     padding: 25px;
 }
@@ -64,4 +60,21 @@ button:hover {
 
 .btn:active {
     background-color: rgb(240, 240, 115);
+}
+
+@media (max-width:490px){
+
+    #calculator{
+        max-width: 300px;
+        height:auto;
+    }
+    #display{
+        font-size: 1rem;
+    }
+    button{
+        width: 50px;
+        height: 50px;
+        font-size:20px;
+    }
+
 }
